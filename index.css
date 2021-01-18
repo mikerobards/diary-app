@@ -1,0 +1,34 @@
+body {
+    margin: 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    display: grid;
+    justify-content: center;
+}
+
+.title {
+    color: #16697a;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+textarea:focus {
+    outline: none;
+    box-shadow: 0px 0px 2px #000;
+}
+
+.entry-textbox {
+    background-color: #ffa62b;
+    width: 20em;
+    height: 10em;
+    padding: 1em;
+    margin-bottom: 0.5em;
+    border: unset;
+    border-radius: 25px;
+}
+
+#entryForm .button {
+    border: unset;
+    border-radius: 25px;
+    padding: 5px 16px;
+    margin-left: 75%;
+}
