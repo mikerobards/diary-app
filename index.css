@@ -6,18 +6,13 @@ body {
 }
 
 .title {
-    color: #16697a;
+    color: #16697A;
     text-align: center;
     margin-bottom: 1em;
 }
 
-textarea:focus {
-    outline: none;
-    box-shadow: 0px 0px 2px #000;
-}
-
 .entry-textbox {
-    background-color: #ffa62b;
+    background-color: #FFA62B;
     width: 20em;
     height: 10em;
     padding: 1em;
@@ -26,9 +21,33 @@ textarea:focus {
     border-radius: 25px;
 }
 
+.entry-textbox:focus {
+    outline: none;
+    box-shadow: 0px 0px 2px #000;
+}
+
 #entryForm .button {
     border: unset;
     border-radius: 25px;
     padding: 5px 16px;
-    margin-left: 75%;
+    margin-left: 76%;
 }
+
+#entries {
+    background-color: #16697A;
+    color: #EDE7E3;
+    font-family: cursive;
+    border: unset;
+    border-radius: 25px;
+    padding: 2em;
+    margin-top: 1em;
+}
+
+/* 
+    - Give the entries section the background color, #16697A
+      (or any other color of your choice)
+    - Give it the text color, #EDE7E3
+      (if you used your own color, this should be something that is visible
+       on the background)
+    - Like we did before, give it rounded edges.
+ */
