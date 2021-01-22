@@ -4,8 +4,6 @@ const entryTextbox = document.querySelector('.entry-textbox')
 const entriesNav = document.querySelector('.entries-nav')
 let count = 1
 
-
-
 function addEntryToDOM(event) {
     event.preventDefault();
     const entryDiv = document.createElement('div')
@@ -19,6 +17,14 @@ function addEntryToDOM(event) {
     displayEntryButton.className = 'display-entry-button'
     displayEntryButton.innerText = count
     entriesNav.appendChild(displayEntryButton)
+
+    displayEntryButton.addEventListener('click', () => {
+        const allEntries = document.querySelectorAll('.single-entry')
+        for (let i = 0; i < allEntries.length; i++) {
+            allEntries[i].style.display = 'none'
+        }
+        entryDiv.style.display = 'block'
+    })
     count++
 }
 

@@ -1,0 +1,6 @@
+{
+    "prettier.tslintIntegration": true,
+    "prettier.requireConfig": true,
+    "editor.formatOnSave": true,
+}
+
